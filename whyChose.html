@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Etech International - Product Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Animate.css for animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1.page-title {
+      text-align: center;
+      color: #0d6efd;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.2);
+    }
+    .product-image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+    .product-content {
+      padding: 1.5rem 2rem;
+    }
+    .product-category-title {
+      color: #0d6efd;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #0d6efd;
+      padding-bottom: 0.25rem;
+      max-width: max-content;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+    /* Alternate flex direction for zigzag layout */
+    .product-card:nth-child(even) .row {
+      flex-direction: row-reverse;
+    }
+    /* Responsive: stack vertically on small devices */
+    @media (max-width: 767px) {
+      .product-card .row {
+        flex-direction: column !important;
+      }
+      .product-image {
+        height: 220px;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">Our Product Portfolio</h1>
+
+  <div class="container">
+
+    <!-- Server Solutions -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1581093588401-cce81f89d9af?auto=format&fit=crop&w=600&q=80"
+            alt="Server Solutions"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Server Solutions</h3>
+          <ul>
+            <li><strong>Dell PowerEdge Series:</strong> R740, R640, R440, T440, T340</li>
+            <li><strong>HP ProLiant Series:</strong> DL380, DL360, ML350, ML110</li>
+            <li><strong>IBM Power Systems:</strong> Power9, Power10 servers</li>
+            <li><strong>Virtualization Ready:</strong> VMware, Hyper-V compatible</li>
+          </ul>
+          <p><strong>Features:</strong></p>
+          <ul>
+            <li>High-performance processors</li>
+            <li>Scalable memory and storage</li>
+            <li>Redundant power supplies</li>
+            <li>Remote management capabilities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Network Infrastructure -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+            alt="Network Infrastructure"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Network Infrastructure</h3>
+          <p><strong>Switches & Routers:</strong></p>
+          <ul>
+            <li>Cisco Systems: Catalyst series, ASR routers</li>
+            <li>HP Networking: Aruba switches and access points</li>
+            <li>Juniper Networks: EX series switches</li>
+            <li>TP-Link Business: Managed and unmanaged switches</li>
+          </ul>
+          <p><strong>Wireless Solutions:</strong></p>
+          <ul>
+            <li>Enterprise-grade access points</li>
+            <li>Wireless controllers</li>
+            <li>Mesh networking solutions</li>
+            <li>Outdoor wireless bridges</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Appliances -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80"
+            alt="Security Appliances"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Security Appliances</h3>
+          <p><strong>Firewalls:</strong></p>
+          <ul>
+            <li>Fortinet FortiGate: Next-gen firewalls</li>
+            <li>SonicWall: Network security appliances</li>
+            <li>Palo Alto Networks: Advanced threat protection</li>
+            <li>Cisco ASA: Enterprise security</li>
+          </ul>
+          <p><strong>Surveillance Systems:</strong></p>
+          <ul>
+            <li>Hikvision: IP cameras and NVRs</li>
+            <li>Dahua: Professional security cameras</li>
+            <li>Axis Communications: Network video solutions</li>
+            <li>Bosch Security: Integrated security systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Storage Solutions -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.25s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=600&q=80"
+            alt="Storage Solutions"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Storage Solutions</h3>
+          <p><strong>SAN/NAS Systems:</strong></p>
+          <ul>
+            <li>Dell EMC: Unity, PowerMax storage arrays</li>
+            <li>NetApp: FAS and AFF series</li>
+            <li>Synology: NAS solutions for SMBs</li>
+            <li>QNAP: High-performance NAS systems</li>
+          </ul>
+          <p><strong>Backup Solutions:</strong></p>
+          <ul>
+            <li>Tape libraries and autoloaders</li>
+            <li>Disk-based backup systems</li>
+            <li>Cloud backup solutions</li>
+            <li>Hybrid backup appliances</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- End-User Devices -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80"
+            alt="End-User Devices"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">End-User Devices</h3>
+          <p><strong>Desktop Computers:</strong></p>
+          <ul>
+            <li>Dell OptiPlex: Business desktops</li>
+            <li>HP EliteDesk: Professional workstations</li>
+            <li>Lenovo ThinkCentre: Reliable business PCs</li>
+            <li>Custom Configurations: Tailored to requirements</li>
+          </ul>
+          <p><strong>Laptops & Notebooks:</strong></p>
+          <ul>
+            <li>Dell Latitude: Business laptops</li>
+            <li>HP EliteBook: Professional notebooks</li>
+            <li>Lenovo ThinkPad: Durable business laptops</li>
+            <li>Gaming Laptops: High-performance systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Communication Systems -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.35s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+            alt="Communication Systems"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Communication Systems</h3>
+          <p><strong>EPABX Systems:</strong></p>
+          <ul>
+            <li>Panasonic: Digital and IP phone systems</li>
+            <li>NEC: Unified communication solutions</li>
+            <li>Avaya: Enterprise communication platforms</li>
+            <li>Grandstream: VoIP phone systems</li>
+          </ul>
+          <p><strong>Networking:</strong></p>
+          <ul>
+            <li>LAN/WAN Setup</li>
+            <li>Wireless Networks</li>
+            <li>Internet Connectivity</li>
+            <li>Network Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialized Equipment -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1560184897-87d8e0afbc9a?auto=format&fit=crop&w=600&q=80"
+            alt="Specialized Equipment"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Specialized Equipment</h3>
+          <p><strong>Banking Equipment:</strong></p>
+          <ul>
+            <li>Note counting machines</li>
+            <li>Counterfeit detection systems</li>
+            <li>Cash management solutions</li>
+            <li>Coin sorting machines</li>
+          </ul>
+          <p><strong>Office Equipment:</strong></p>
+          <ul>
+            <li>Multi-function printers</li>
+            <li>High-speed scanners</li>
+            <li>Document shredders</li>
+            <li>Laminating machines</li>
+          </ul>
+          <p><strong>Environmental Systems:</strong></p>
+          <ul>
+            <li>Precision air conditioning</li>
+            <li>UPS systems (APC, Eaton)</li>
+            <li>Power distribution units</li>
+            <li>Environmental monitoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accessories & Components -->
+    <div class="product-card wow animate__animated animate__fadeInUp" data-wow-delay="0.45s">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-5">
+          <img
+            src="https://images.unsplash.com/photo-1587825140708-51a028a5e9e8?auto=format&fit=crop&w=600&q=80"
+            alt="Accessories & Components"
+            class="product-image"
+          />
+        </div>
+        <div class="col-md-7 product-content">
+          <h3 class="product-category-title">Accessories & Components</h3>
+          <p><strong>Cables & Connectivity:</strong></p>
+          <ul>
+            <li>Network cables (Cat5e, Cat6, Cat6a)</li>
+            <li>Fiber optic cables</li>
+            <li>Power cables and adapters</li>
+            <li>Patch panels and racks</li>
+          </ul>
+          <p><strong>Memory & Storage:</strong></p>
+          <ul>
+            <li>Server memory modules</li>
+            <li>SSDs and HDDs</li>
+            <li>Memory cards</li>
+            <li>External storage devices</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
