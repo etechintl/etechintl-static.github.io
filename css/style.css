@@ -213,7 +213,7 @@
 /* responsive of the services */
 @media (min-width: 992px) {
   .custom-card {
-    min-height: 430px;
+    min-height: 490px;
   }
 }
 
