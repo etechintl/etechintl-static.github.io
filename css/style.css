@@ -1607,3 +1607,146 @@ ul li {
     padding: 1.5rem;
   }
 }
+
+
+
+/* clients page start */
+
+.page-clients {
+  background: linear-gradient(rgba(8, 62, 122, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/client-banner.jpg) center center no-repeat;
+  background-size: cover;
+}
+.header-carousel .container,
+.page-clients .container {
+  position: relative;
+  padding: 45px 0 45px 35px;
+  border-left: 15px solid #ffffff;
+}
+
+.header-carousel .container::before,
+.header-carousel .container::after,
+.page-clients .container::before,
+.page-clients .container::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 15px;
+  background: #ffffff;
+}
+
+.header-carousel .container::after,
+.page-clients .container::after {
+  top: 100%;
+  margin-top: -15px;
+}
+
+/* clients page end */
+
+/* clents start */
+    
+
+      .product-category {
+        background-color: #ffffff;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        transition: all 0.4s ease;
+      }
+   
+      .product-category h3 {
+        /* color: #1e40af; */
+        font-weight: 700;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 4px solid #1e40af;
+        padding-bottom: 0.75rem;
+        position: relative;
+      }
+      .product-category h3::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background: linear-gradient(to right, #1e40af, #3b82f6);
+        transition: width 0.3s ease;
+      }
+      .product-category:hover h3::after {
+        width: 100px;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #374151;
+      }
+      ul li {
+        margin-bottom: 0.75rem;
+        font-size: 1.05rem;
+        position: relative;
+        padding-left: 1.5rem;
+        transition: color 0.3s ease;
+      }
+      ul li::before {
+        position: absolute;
+        left: 0;
+        /* color: #3b82f6; */
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+      ul li:hover {
+        color: #1e40af;
+      }
+
+      p strong {
+        color: #1f2937;
+        font-weight: 700;
+        font-size: 1.15rem;
+      }
+
+      .client-logo {
+        max-height: 90px;
+        object-fit: contain;
+        transition: all 0.4s ease;
+      }
+      /* .client-logo:hover {
+        filter: none;
+        transform: scale(1.1);
+      } */
+
+      
+
+      .testimonial-item {
+        transition: transform 0.3s ease;
+      }
+      .testimonial-item:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .portfolio-header h1 {
+          font-size: 2.25rem;
+        }
+        .product-category {
+          padding: 2rem;
+        }
+        .client-logo {
+          max-height: 70px;
+        }
+      }
+      @media (max-width: 576px) {
+        .portfolio-header h1 {
+          font-size: 1.75rem;
+        }
+        .product-category {
+          padding: 1.5rem;
+        }
+        
+      }
+      /* client end */
