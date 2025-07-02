@@ -210,6 +210,11 @@
   margin-top: -15px;
 }
 
+.custom-card {
+  min-height: 410px; /* Applies on all screen sizes */
+}
+
+
 /* responsive of the services */
 @media (min-width: 992px) {
   .custom-card {
