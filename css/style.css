@@ -286,6 +286,19 @@
   margin-top: -15px;
 }
 
+
+/* Default: auto height on small screens */
+.contact-custom-card {
+  height: auto;
+}
+
+/* Fixed height on large screens and up (≥992px) */
+@media (min-width: 992px) {
+  .contact-custom-card {
+    height: 410px; /* or your desired fixed height */
+    overflow-y: auto; /* Optional: scroll if content overflows */
+  }
+}
 /* Team banner image  */
 .page-team {
   background: linear-gradient(rgba(83, 144, 236, 0.4), rgba(49, 92, 231, 0.4)),

@@ -70,7 +70,7 @@
         <div class="col-lg-9 col-md-12 text-end">
           <div class="h-100 d-inline-flex align-items-center me-4">
             <i class="fa fa-map-marker-alt text-primary me-2"></i>
-            <p class="m-0">Basundhara, Kathmandu, Nepal</p>
+            <p class="m-0">Kathmandu, Nepal</p>
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
             <i class="far fa-envelope-open text-primary me-2"></i>
@@ -365,7 +365,7 @@
 
     <!-- About End -->
 
-    <!-- Fact Start -->
+    <!-- Fact Start here -->
     <div class="container-fluid fact bg-dark my-5 py-5">
       <div class="container">
         <div class="row g-4">
@@ -853,7 +853,7 @@
             </div>
             <img
               class="bg-light rounded-circle p-2 mx-auto mb-2"
-              src="img/testimonial-1.jpg"
+              src="../img/testimonial-1.jpg"
               style="width: 80px; height: 80px"
             />
             <div class="mb-2">
@@ -877,7 +877,7 @@
             </div>
             <img
               class="bg-light rounded-circle p-2 mx-auto mb-2"
-              src="img/testimonial-2.jpg"
+              src="../img/testimonial-1.jpg"
               style="width: 80px; height: 80px"
             />
             <div class="mb-2">
@@ -1066,19 +1066,19 @@
     </script>
 
     <script>
-  const validPaths = [
-    '/', 
-    '/home/', 
-    '/about/', 
-    '/contact/', 
-    // add more valid paths here
-  ];
+      const validPaths = [
+        "/",
+        "/home/",
+        "/about/",
+        "/contact/",
+        // add more valid paths here
+      ];
 
-  const currentPath = window.location.pathname.toLowerCase();
+      const currentPath = window.location.pathname.toLowerCase();
 
-  if (!validPaths.includes(currentPath)) {
-    window.location.href = '/404/';
-  }
-</script>
+      if (!validPaths.includes(currentPath)) {
+        window.location.href = "/404/";
+      }
+    </script>
   </body>
 </html>
