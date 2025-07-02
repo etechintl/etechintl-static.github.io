@@ -1608,8 +1608,6 @@ ul li {
   }
 }
 
-
-
 /* clients page start */
 
 .page-clients {
@@ -1646,107 +1644,232 @@ ul li {
 /* clients page end */
 
 /* clents start */
-    
 
-      .product-category {
-        background-color: #ffffff;
-        border-radius: 1rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        padding: 2.5rem;
-        margin-bottom: 3rem;
-        transition: all 0.4s ease;
-      }
-   
-      .product-category h3 {
-        /* color: #1e40af; */
-        font-weight: 700;
-        font-size: 1.75rem;
-        margin-bottom: 1.5rem;
-        border-bottom: 4px solid #1e40af;
-        padding-bottom: 0.75rem;
-        position: relative;
-      }
-      .product-category h3::after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 50px;
-        height: 4px;
-        background: linear-gradient(to right, #1e40af, #3b82f6);
-        transition: width 0.3s ease;
-      }
-      .product-category:hover h3::after {
-        width: 100px;
-      }
+.product-category {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.4s ease;
+}
 
-      ul {
-        padding-left: 1.5rem;
-        margin-bottom: 1.5rem;
-        color: #374151;
-      }
-      ul li {
-        margin-bottom: 0.75rem;
-        font-size: 1.05rem;
-        position: relative;
-        padding-left: 1.5rem;
-        transition: color 0.3s ease;
-      }
-      ul li::before {
-        position: absolute;
-        left: 0;
-        /* color: #3b82f6; */
-        font-size: 1.5rem;
-        line-height: 1.2;
-      }
-      ul li:hover {
-        color: #1e40af;
-      }
+.product-category h3 {
+  /* color: #1e40af; */
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #1e40af;
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+.product-category h3::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(to right, #1e40af, #3b82f6);
+  transition: width 0.3s ease;
+}
+.product-category:hover h3::after {
+  width: 100px;
+}
 
-      p strong {
-        color: #1f2937;
-        font-weight: 700;
-        font-size: 1.15rem;
-      }
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+ul li::before {
+  position: absolute;
+  left: 0;
+  /* color: #3b82f6; */
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+ul li:hover {
+  color: #1e40af;
+}
 
-      .client-logo {
-        max-height: 90px;
-        object-fit: contain;
-        transition: all 0.4s ease;
-      }
-      /* .client-logo:hover {
+p strong {
+  color: #1f2937;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.client-logo {
+  max-height: 90px;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+/* .client-logo:hover {
         filter: none;
         transform: scale(1.1);
       } */
 
-      
+.testimonial-item {
+  transition: transform 0.3s ease;
+}
+.testimonial-item:hover {
+  transform: translateY(-5px);
+}
 
-      .testimonial-item {
-        transition: transform 0.3s ease;
-      }
-      .testimonial-item:hover {
-        transform: translateY(-5px);
-      }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio-header h1 {
+    font-size: 2.25rem;
+  }
+  .product-category {
+    padding: 2rem;
+  }
+  .client-logo {
+    max-height: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .portfolio-header h1 {
+    font-size: 1.75rem;
+  }
+  .product-category {
+    padding: 1.5rem;
+  }
+}
+/* client end */
 
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .portfolio-header h1 {
-          font-size: 2.25rem;
-        }
-        .product-category {
-          padding: 2rem;
-        }
-        .client-logo {
-          max-height: 70px;
-        }
-      }
-      @media (max-width: 576px) {
-        .portfolio-header h1 {
-          font-size: 1.75rem;
-        }
-        .product-category {
-          padding: 1.5rem;
-        }
-        
-      }
-      /* client end */
+/* our partner */
+.swiper-part {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.swipper-paginaiton-dots-here {
+  padding-top: 40px;
+}
+.swiper-pagination-bullet {
+  background-color: #333; /* Customize bullet color */
+  opacity: 0.5;
+  margin-top: 24px;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  margin-top: 24px;
+}
+
+/* Wrapper div to control button positioning and spacing */
+.swiper-button-wrapper {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+  width: 50px; /* Enough width for button + spacing */
+  height: 50px; /* Match button height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* On top of slides */
+}
+
+/* Position left wrapper to the left side */
+.swiper-button-wrapper:first-of-type {
+  left: 10px; /* Distance from left edge */
+}
+
+/* Position right wrapper to the right side */
+.swiper-button-wrapper:last-of-type {
+  right: 10px; /* Distance from right edge */
+}
+
+/* Style for the actual Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: #2f2e2e;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px; /* Space inside circle around arrow */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effects */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #eee;
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Optional: Adjust default Swiper arrow size */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px; /* Arrow icon size */
+  font-weight: bold;
+}
+
+.swiper-button-wrapper {
+  position: absolute;
+  top: 50%; /* vertical center */
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Position left button */
+.swiper-button-left {
+  left: 10px; /* adjust distance from left edge */
+}
+
+/* Position right button */
+.swiper-button-right {
+  right: 10px; /* adjust distance from right edge */
+}
+
+/* Button styling */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  background-color: #898888;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #eee;
+  color: #000;
+  transform: scale(1);
+}
+
+/* Arrow size */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 10px;
+  font-weight: bold;
+}
